@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- This file describes the code in the SkeletonApp package, which is
+     used by the system to determine how to start your application and
+     integrate it with the rest of the system.  -->
+
+<!-- Declare the contents of this Android application.  The namespace
+     attribute brings in the Android platform namespace, and the package
+     supplies a unique name for the application.  When writing your
+     own application, the package name must be changed from "com.example.*"
+     to come from a domain that you own or have control over. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="value.app" android:versionCode="1">
+<uses-permission android:name="android.permission.SET_WALLPAPER"/>
+<uses-permission android:name="android.permission.INTERNET"/>
+
+    <application android:label="@string/skeleton_app" android:icon="@drawable/mainicon">
+        <activity android:name=".SkeletonActivity">
+            <intent-filter>
+                <action android:name="value.app.SKELETONACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Education">
+            <intent-filter>
+                <action android:name="value.app.EDUCATION"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Leadership">
+            <intent-filter>
+                <action android:name="value.app.LEADERSHIP"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Book">
+            <intent-filter>
+                <action android:name="value.app.BOOK"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Popup"
+            	  android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="value.app.POPUP"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Circle">
+            <intent-filter>
+                <action android:name="value.app.CIRCLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Box">
+            <intent-filter>
+                <action android:name="value.app.BOX"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Toggle">
+            <intent-filter>
+                <action android:name="value.app.TOGGLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Email">
+            <intent-filter>
+                <action android:name="value.app.EMAIL"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Camera"
+            	android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="value.app.CAMERA"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Data"
+            	android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="value.app.DATA"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".OpenClass"
+            	android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="value.app.OPENCLASS"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".SimpleBrowser"
+            	android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="value.app.SIMPLEBROWSER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Flipper"
+            	android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="value.app.FLIPPER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".SharedPrefs"
+            	android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="value.app.SHAREDPREFS"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".SQLiteExample"
+            	android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="value.app.SQLITEEXAMPLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".SQLiteView"
+            	android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="value.app.SQLITEVIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".HttpExample"
+            	android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="value.app.HTTPEXAMPLE"/>
+            </intent-filter>
+        </activity>
+        
+        
+		
+    </application>
+
+</manifest>

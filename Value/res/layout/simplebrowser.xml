@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	<LinearLayout 
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:weightSum="100"
+    	 >
+    <EditText
+        android:id="@+id/etURL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="30"
+        >
+
+        <requestFocus />
+    </EditText>
+    <Button
+        android:id="@+id/bGo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="70"
+        android:text="go"
+        ></Button>
+    </LinearLayout>
+    
+	<LinearLayout 
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:weightSum="100">
+    <Button
+        android:id="@+id/bBack"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        android:text="Go Back a Page"
+        ></Button>
+     <Button
+         android:id="@+id/bForward"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        android:text="Go Forward"
+        ></Button>
+      <Button
+          android:id="@+id/bRefresh"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        android:text="Refresh Page"
+        ></Button>
+      <Button
+          android:id="@+id/bClearHistory"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        android:text="Clear History"
+        ></Button>
+	</LinearLayout>
+	
+	<WebView 
+	    android:id="@+id/wvInternet"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    ></WebView>
+	
+</LinearLayout>
